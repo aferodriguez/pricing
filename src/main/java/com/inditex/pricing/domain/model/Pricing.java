@@ -3,6 +3,7 @@
  */
 package com.inditex.pricing.domain.model;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -22,8 +23,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Pricing {
+public class Pricing implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+	
 	/**
 	 * The pricing Id
 	 */
