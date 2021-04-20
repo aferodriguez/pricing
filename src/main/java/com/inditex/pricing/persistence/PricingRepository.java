@@ -35,7 +35,7 @@ public interface PricingRepository extends JpaRepository<PricingEntity, Integer>
 			+ "FROM pricing p "
 			+ "WHERE p.brand_id = :brandId "
 			+ "AND p.product_id = :productId "
-			+ "AND :applicationDate BETWEEN p.start_date AND p.endDate ", 
+			+ "AND :applicationDate BETWEEN p.start_date AND p.end_date ", 
 			nativeQuery = true)
 	public List<PricingEntity> getPricingList(@Param("applicationDate") LocalDateTime applicationDate,
 												@Param("productId") Integer productId,

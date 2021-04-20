@@ -4,7 +4,6 @@
 package com.inditex.pricing.domain.service;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import com.inditex.pricing.domain.PricingNotFoundException;
 import com.inditex.pricing.domain.model.Pricing;

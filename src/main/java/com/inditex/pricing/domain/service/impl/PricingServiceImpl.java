@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.inditex.pricing.domain.PricingNotFoundException;
 import com.inditex.pricing.domain.model.Pricing;
@@ -21,6 +22,7 @@ import com.inditex.pricing.persistence.PricingRepository;
  * @version 1.0
  * @since 1.0
  */
+@Service
 public class PricingServiceImpl implements PricingService {
 
 	/**
