@@ -1,5 +1,5 @@
 /**
- * company name 2011 - 2021
+ * company name 2020 - 2021
  */
 package com.inditex.pricing.domain.service.util.mapper.impl;
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.inditex.pricing.domain.model.Pricing;
 import com.inditex.pricing.domain.service.util.mapper.PricingEntityToPricingMapper;
-import com.inditex.pricing.persistence.dto.PricingEntity;
+import com.inditex.pricing.persistence.dao.PricingEntity;
 
 /**
  * Utility to map from {@link PricingEntity} to {@link Pricing}

@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.inditex.pricing.persistence.dto.PricingEntity;
+import com.inditex.pricing.persistence.dao.PricingEntity;
 
 /**
  * repository for the {@link PricingEntity} object
@@ -35,7 +35,7 @@ public interface PricingRepository extends JpaRepository<PricingEntity, Integer>
 			+ "FROM pricing p "
 			+ "WHERE p.brand_id = :brandId "
 			+ "AND p.product_id = :productId "
-			+ "AND :applicationDate BETWEEN p.start_date AND p.endDate ", 
+			+ "AND :applicationDate BETWEEN p.start_date AND p.end_date ", 
 			nativeQuery = true)
 	public List<PricingEntity> getPricingList(@Param("applicationDate") LocalDateTime applicationDate,
 												@Param("productId") Integer productId,

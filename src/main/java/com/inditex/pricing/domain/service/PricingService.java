@@ -1,10 +1,9 @@
 /**
- * company name 2011 - 2021
+ * company name 2020 - 2021
  */
 package com.inditex.pricing.domain.service;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import com.inditex.pricing.domain.PricingNotFoundException;
 import com.inditex.pricing.domain.model.Pricing;
