@@ -1,10 +1,11 @@
 /**
- * company name 2011 - 2021
+ * company name 2020 - 2021
  */
 package com.inditex.pricing.controller.dto;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -39,17 +40,17 @@ public class PricingSearchResponseDTO implements Serializable {
 	/**
 	 * Date since this pricing applies
 	 */
-	private Integer startApplicationDate;
+	private LocalDateTime startApplicationDate;
 	
 	/**
 	 * Date until this pricing applies
 	 */
-	private Integer endApplicationDate;
+	private LocalDateTime endApplicationDate;
 	
 	/**
 	 * the pricingId 
 	 */
-	private BigDecimal tariff;
+	private Integer tariff;
 
 	/**
 	 * the final price

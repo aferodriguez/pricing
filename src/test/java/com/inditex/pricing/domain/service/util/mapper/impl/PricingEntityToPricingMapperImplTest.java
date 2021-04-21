@@ -1,5 +1,5 @@
 /**
- * company name 2011 - 2021
+ * company name 2020 - 2021
  */
 package com.inditex.pricing.domain.service.util.mapper.impl;
 
@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 
 import com.inditex.pricing.domain.model.Pricing;
 import com.inditex.pricing.domain.model.PricingTest;
-import com.inditex.pricing.persistence.dto.PricingEntity;
-import com.inditex.pricing.persistence.dto.PricingEntityTest;
+import com.inditex.pricing.persistence.dao.PricingEntity;
+import com.inditex.pricing.persistence.dao.PricingEntityTest;
 
 /**
  * Test suite for the {@link PricingEntityToPricingMapperImpl}

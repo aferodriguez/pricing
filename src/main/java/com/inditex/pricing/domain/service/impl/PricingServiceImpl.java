@@ -1,5 +1,5 @@
 /**
- * company name 2011 - 2021
+ * company name 2020 - 2021
  */
 package com.inditex.pricing.domain.service.impl;
 
@@ -15,6 +15,9 @@ import com.inditex.pricing.domain.service.PricingService;
 import com.inditex.pricing.domain.service.util.mapper.impl.PricingEntityToPricingMapperImpl;
 import com.inditex.pricing.persistence.PricingRepository;
 
+import ch.qos.logback.classic.Logger;
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * Pricing Service Implementation for {@link PricingService}
  * 
@@ -22,6 +25,7 @@ import com.inditex.pricing.persistence.PricingRepository;
  * @version 1.0
  * @since 1.0
  */
+@Slf4j
 @Service
 public class PricingServiceImpl implements PricingService {
 
@@ -56,8 +60,10 @@ public class PricingServiceImpl implements PricingService {
 		if (pricingList != null && !pricingList.isEmpty()) {
 			return choosePricingWithHighestPriority(pricingList);
 		} else {
+			log.error(null);
 			throw new PricingNotFoundException(
-					"There not exists pricing configuration for the parameters" + applicationDate);
+					" There not exist pricing configuration for the parameters applicationDate: " + applicationDate
+					+",productId: "+productId+", brandId: "+ brandId);
 		}
 
 	}

@@ -1,5 +1,5 @@
 /**
- * company name 2011 - 2021
+ * company name 2020 - 2021
  */
 package com.inditex.pricing.domain.service.impl;
 
@@ -25,7 +25,7 @@ import com.inditex.pricing.domain.model.Pricing;
 import com.inditex.pricing.domain.model.PricingTest;
 import com.inditex.pricing.domain.service.util.mapper.impl.PricingEntityToPricingMapperImpl;
 import com.inditex.pricing.persistence.PricingRepository;
-import com.inditex.pricing.persistence.dto.PricingEntity;
+import com.inditex.pricing.persistence.dao.PricingEntity;
 
 /**
  * Test suite for the {@link PricingServiceImpl}

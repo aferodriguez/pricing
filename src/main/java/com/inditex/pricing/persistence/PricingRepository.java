@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.inditex.pricing.persistence.dto.PricingEntity;
+import com.inditex.pricing.persistence.dao.PricingEntity;
 
 /**
  * repository for the {@link PricingEntity} object

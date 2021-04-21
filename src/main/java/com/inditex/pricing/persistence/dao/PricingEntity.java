@@ -1,7 +1,7 @@
 /**
- * company name 2011 - 2021
+ * company name 2020 - 2021
  */
-package com.inditex.pricing.persistence.dto;
+package com.inditex.pricing.persistence.dao;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -42,7 +42,7 @@ public class PricingEntity implements Serializable {
 	 * The pricing Id
 	 */
 	@Id
-	@Column(name = "pricingId")
+	@Column(name = "pricing_id")
 	private Integer pricingId;
 
 	/**
